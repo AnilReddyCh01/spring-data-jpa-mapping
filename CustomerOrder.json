@@ -1,0 +1,21 @@
+{
+  "customer": {
+    "name": "siddu Reddy",
+    "email": "siddu.reddy@example.com",
+    "gender": "Male",
+    "products": [
+      {
+        "pid": 201,
+        "productName": "TV",
+        "qty": 2,
+        "price": 25000
+      },
+      {
+        "pid": 202,
+        "productName": "Iphone",
+        "qty": 10,
+        "price": 85000
+      }
+    ]
+  }
+}
