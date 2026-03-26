@@ -1,6 +1,7 @@
 package com.aniljava.spring_data_jpa_mapping.service;
 
 import com.aniljava.spring_data_jpa_mapping.dto.OrderRequest;
+import com.aniljava.spring_data_jpa_mapping.dto.OrderResponse;
 import com.aniljava.spring_data_jpa_mapping.entity.Customer;
 import com.aniljava.spring_data_jpa_mapping.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,9 @@ public class OrderService {
 
     public List<Customer> findAllOrders() {
         return customerRepository.findAll();
+    }
+
+    public List<OrderResponse> getJoinInformation() {
+        return customerRepository.getJoinInformation();
     }
 }

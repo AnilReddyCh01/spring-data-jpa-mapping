@@ -1,6 +1,7 @@
 package com.aniljava.spring_data_jpa_mapping.controller;
 
 import com.aniljava.spring_data_jpa_mapping.dto.OrderRequest;
+import com.aniljava.spring_data_jpa_mapping.dto.OrderResponse;
 import com.aniljava.spring_data_jpa_mapping.entity.Customer;
 import com.aniljava.spring_data_jpa_mapping.service.OrderService;
 import org.slf4j.Logger;
@@ -30,4 +31,12 @@ public class OrderController {
         logger.info("Received request to find all orders");
         return service.findAllOrders();
     }
+
+    @GetMapping("/getJoinInformation")
+    public List<OrderResponse> getJoinInformation() {
+        logger.info("Received request to get join information");
+        return service.getJoinInformation();
+    }
+
+
 }
